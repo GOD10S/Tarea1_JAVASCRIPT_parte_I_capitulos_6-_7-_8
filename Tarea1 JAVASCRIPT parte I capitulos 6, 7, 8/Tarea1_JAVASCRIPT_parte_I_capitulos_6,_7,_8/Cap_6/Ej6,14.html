@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Ejercicio 6.14: Orden de evaluación de operadores -->
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 6.14: Orden de evaluación de operadores</title>
+</head>
+<body>
+  <h1>Ejercicio 6.14: Orden de evaluación de operadores</h1>
+  <ol>
+    <li>
+      <strong>a) <code>x = 7 + 3 * 6 / 2 - 1;</code></strong>
+      <p><strong>Orden de evaluación:</strong></p>
+      <ul>
+        <li><code>3 * 6</code> → 18</li>
+        <li><code>18 / 2</code> → 9</li>
+        <li><code>7 + 9</code> → 16</li>
+        <li><code>16 - 1</code> → 15</li>
+      </ul>
+      <p><strong>Valor final de x:</strong> 15</p>
+    </li>
+    <li>
+      <strong>b) <code>x = 2 % 2 + 2 * 2 - 2 / 2;</code></strong>
+      <p><strong>Orden de evaluación:</strong></p>
+      <ul>
+        <li><code>2 % 2</code> → 0</li>
+        <li><code>2 * 2</code> → 4</li>
+        <li><code>2 / 2</code> → 1</li>
+        <li><code>0 + 4</code> → 4</li>
+        <li><code>4 - 1</code> → 3</li>
+      </ul>
+      <p><strong>Valor final de x:</strong> 3</p>
+    </li>
+    <li>
+      <strong>c) <code>x = ( 3 * 9 * ( 3 + ( 9 * 3 / ( 3 ) ) ) );</code></strong>
+      <p><strong>Orden de evaluación:</strong></p>
+      <ul>
+        <li><code>9 * 3</code> → 27</li>
+        <li><code>27 / 3</code> → 9</li>
+        <li><code>3 + 9</code> → 12</li>
+        <li><code>3 * 9 * 12</code> → 324</li>
+      </ul>
+      <p><strong>Valor final de x:</strong> 324</p>
+    </li>
+  </ol>
+</body>
+</html>

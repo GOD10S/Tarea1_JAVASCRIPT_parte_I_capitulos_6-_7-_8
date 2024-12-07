@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- Ejercicio 6.16: Operaciones con dos números -->
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 6.16: Operaciones con dos números</title>
+  <script>
+    // Solicitar al usuario que escriba dos números
+    let numero1 = parseFloat(window.prompt("Escriba el primer número:", "0"));
+    let numero2 = parseFloat(window.prompt("Escriba el segundo número:", "0"));
+
+    // Calcular suma, producto, diferencia y cociente
+    let suma = numero1 + numero2;
+    let producto = numero1 * numero2;
+    let diferencia = numero1 - numero2;
+    let cociente = (numero2 !== 0) ? (numero1 / numero2) : "Infinito";
+
+    // Mostrar los resultados en el cuerpo del HTML
+    function mostrarResultados() {
+      document.writeln("<h1>Resultados de las Operaciones</h1>");
+      document.writeln("<p><strong>Suma:</strong> " + numero1 + " + " + numero2 + " = " + suma + "</p>");
+      document.writeln("<p><strong>Producto:</strong> " + numero1 + " * " + numero2 + " = " + producto + "</p>");
+      document.writeln("<p><strong>Diferencia:</strong> " + numero1 + " - " + numero2 + " = " + diferencia + "</p>");
+      document.writeln("<p><strong>Cociente:</strong> " + numero1 + " / " + numero2 + " = " + cociente + "</p>");
+    }
+  </script>
+</head>
+<body onload="mostrarResultados()">
+</body>
+</html>

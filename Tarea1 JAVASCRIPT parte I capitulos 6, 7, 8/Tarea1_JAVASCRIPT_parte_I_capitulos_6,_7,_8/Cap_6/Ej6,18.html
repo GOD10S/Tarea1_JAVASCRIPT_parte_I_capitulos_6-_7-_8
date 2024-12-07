@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Ejercicio 6.18: Operaciones con tres enteros -->
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Operaciones con Tres Números</title>
+  <script>
+    // Solicitar al usuario que introduzca tres números enteros
+    let numero1 = parseInt(window.prompt("Escriba el primer número entero:", "0"));
+    let numero2 = parseInt(window.prompt("Escriba el segundo número entero:", "0"));
+    let numero3 = parseInt(window.prompt("Escriba el tercer número entero:", "0"));
+
+    // Calcular la suma, promedio y producto
+    let suma = numero1 + numero2 + numero3;
+    let promedio = suma / 3;
+    let producto = numero1 * numero2 * numero3;
+
+    // Determinar el menor y el mayor número
+    let menor = Math.min(numero1, numero2, numero3);
+    let mayor = Math.max(numero1, numero2, numero3);
+
+    // Mostrar los resultados en un diálogo de alerta
+    window.alert(
+      "Resultados:\n" +
+      "Suma: " + suma + "\n" +
+      "Promedio: " + promedio.toFixed(2) + "\n" +
+      "Producto: " + producto + "\n" +
+      "Menor: " + menor + "\n" +
+      "Mayor: " + mayor
+    );
+  </script>
+</head>
+<body>
+</body>
+</html>

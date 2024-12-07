@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- Respuestas al ejercicio de autoevaluación 6.1 a 6.5-->
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio de Autoevaluación - JavaScript</title>
+</head>
+<body>
+  <h1>Ejercicio de Autoevaluación - Respuestas</h1>
+
+  <h2>6.1 Complete las siguientes oraciones</h2>
+  <ol>
+    <li>a) <code>//</code> comienza un comentario de una sola línea.</li>
+    <li>b) Toda instrucción de JavaScript debe terminar con un <code>;</code> (punto y coma).</li>
+    <li>c) La instrucción <code>if</code> se utiliza para tomar decisiones.</li>
+    <li>d) El objeto <code>window</code> muestra diálogos <code>alert</code> y <code>prompt</code>.</li>
+    <li>e) Las <code>palabras reservadas</code> están reservadas para uso de JavaScript.</li>
+    <li>f) Los métodos <code>write</code> y <code>writeln</code> del objeto <code>document</code> escriben texto en un documento HTML5.</li>
+  </ol>
+
+  <h2>6.2 Indique si cada enunciado es verdadero o falso</h2>
+  <ul>
+    <li>a) Falso. Los comentarios no provocan acciones al ejecutar el script; se usan para documentar y mejorar la legibilidad.</li>
+    <li>b) Falso. JavaScript distingue entre mayúsculas y minúsculas, por lo que las variables son diferentes.</li>
+    <li>c) Verdadero.</li>
+    <li>d) Falso. Los operadores <code>*</code>, <code>/</code> y <code>%</code> tienen el mismo nivel de precedencia; <code>+</code> y <code>-</code> tienen menor precedencia.</li>
+    <li>e) Falso. La función <code>parseInt</code> convierte una cadena en un valor entero.</li>
+  </ul>
+
+  <h2>6.3 Instrucciones de JavaScript</h2>
+  <pre>
+    // a) Declaración de variables
+    var c, estaEsUnaVariable, q76354, numero;
+
+    // b) Pedir al usuario que ingrese un entero con valor predeterminado 0
+    var value = window.prompt("Escriba un entero", "0");
+
+    // c) Convertir una cadena en entero
+    var edad = parseInt(valorCadena);
+
+    // d) Verificar si la variable numero no es 7
+    if (numero !== 7) {
+      window.alert("La variable numero no es igual a 7");
+    }
+
+    // e) Escribir mensaje en el documento HTML
+    document.writeln("Esto es JavaScript");
+  </pre>
+
+  <h2>6.4 Identificación y corrección de errores</h2>
+  <pre>
+    // a) Corrección de la instrucción if
+    if (c < 7) {
+      window.alert("c es menor que 7");
+    }
+
+    // b) Corrección del operador relacional
+    if (c >= 7) {
+      window.alert("c es igual o mayor que 7");
+    }
+  </pre>
+
+  <h2>6.5 Instrucciones y comentarios</h2>
+  <pre>
+    // a) Calcular el producto de tres enteros
+    // Esta secuencia de comandos calcula el producto de tres enteros.
+
+    // b) Declarar variables
+    var x, y, z, resultado;
+
+    // c) Declarar variables adicionales
+    var xVal, yVal, zVal;
+
+    // d-f) Pedir valores al usuario y almacenarlos en variables
+    xVal = window.prompt("Escriba el primer entero:", "0");
+    yVal = window.prompt("Escriba el segundo entero:", "0");
+    zVal = window.prompt("Escriba el tercer entero:", "0");
+
+    // g-i) Convertir las cadenas en enteros
+    x = parseInt(xVal);
+    y = parseInt(yVal);
+    z = parseInt(zVal);
+
+    // j) Calcular el producto
+    resultado = x * y * z;
+
+    // k) Mostrar el resultado en el documento HTML
+    document.writeln("< h1 >El producto es " + resultado + "< /h1 >");
+  </pre>
+
+</body>
+</html>

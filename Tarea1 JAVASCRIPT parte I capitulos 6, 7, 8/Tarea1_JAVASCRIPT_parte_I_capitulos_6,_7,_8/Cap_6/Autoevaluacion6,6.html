@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- Ejercicio 6.6: producto.html -->
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Solución 6.6</title>
+  <script>
+    // Declaración de variables
+    var xVal, yVal, zVal;
+    var x, y, z, resultado;
+
+    // Solicitar al usuario que ingrese los tres valores
+    xVal = window.prompt("Escriba el primer entero:", "0");
+    yVal = window.prompt("Escriba el segundo entero:", "0");
+    zVal = window.prompt("Escriba el tercer entero:", "0");
+
+    // Convertir las cadenas ingresadas a enteros
+    x = parseInt(xVal);
+    y = parseInt(yVal);
+    z = parseInt(zVal);
+
+    // Calcular el producto de los tres números
+    resultado = x * y * z;
+
+    // Mostrar el resultado en el documento HTML
+    document.writeln("<h1>El producto es " + resultado + "</h1>");
+  </script>
+</head>
+<body></body>
+</html>
